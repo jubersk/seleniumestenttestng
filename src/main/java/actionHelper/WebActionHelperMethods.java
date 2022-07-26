@@ -85,8 +85,8 @@ public class WebActionHelperMethods {
      * @param xpath
      * @return
      */
-    public boolean VerifyObjectExists(String xpath) {
-        if (driver.findElement(By.xpath(xpath)).isDisplayed()) {
+    public boolean VerifyObjectExists(WebElement xpath) {
+        if (xpath.isDisplayed()) {
             return true;
 
         } else {

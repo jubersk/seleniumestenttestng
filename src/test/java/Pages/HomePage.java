@@ -11,15 +11,12 @@ public class HomePage extends BasePageClass {
         super(driver);
     }
 
-    @FindBy(xpath = "//*[@placeholder=\"Search for products, brands and more\"]")
-    WebElement searchForProducts;
+    @FindBy(xpath = "//img[@class='img-responsive']")
+    WebElement imageHome;
 
-    @FindBy(xpath = "")
-    WebElement mobileNames;
-
-    public void searchForProducts() {
-        webActionHelperMethods.clickbutton(searchForProducts);
-        searchForProducts.sendKeys("Mobiles");
-        searchForProducts.sendKeys(Keys.ENTER);
+   
+    public void checkHomePageImage() {
+        webActionHelperMethods.VerifyObjectExists(imageHome);
+       
     }
 }
