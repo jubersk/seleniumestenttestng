@@ -1,29 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-07-26T06:53:35Z" name="Suite-1" finished-at="2022-07-26T06:53:41Z" duration-ms="5766">
+  <suite started-at="2022-07-27T19:48:58Z" name="Suite-1" finished-at="2022-07-27T19:49:01Z" duration-ms="2700">
     <groups>
     </groups>
-    <test started-at="2022-07-26T06:53:35Z" name="DeliveryOrderTest" finished-at="2022-07-26T06:53:41Z" duration-ms="5766">
-      <class name="TestCases.LoginTestCases">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.LoginTestCases@ae13544]" started-at="2022-07-26T12:23:25Z" name="setUp" finished-at="2022-07-26T12:23:35Z" duration-ms="9797" status="PASS">
+    <test started-at="2022-07-27T19:48:58Z" name="petclinicSmoke" finished-at="2022-07-27T19:49:01Z" duration-ms="2700">
+      <class name="TestCases.HomePage">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.HomePage@43c1b556]" started-at="2022-07-28T01:18:56Z" name="setUp" finished-at="2022-07-28T01:18:58Z" duration-ms="2121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TEST_CASE_ONE()[pri:0, instance:TestCases.LoginTestCases@ae13544]" started-at="2022-07-26T12:23:35Z" name="TEST_CASE_ONE" finished-at="2022-07-26T12:23:39Z" duration-ms="3471" status="PASS">
+        <test-method signature="HomePage_Image()[pri:0, instance:TestCases.HomePage@43c1b556]" started-at="2022-07-28T01:18:58Z" name="HomePage_Image" finished-at="2022-07-28T01:18:58Z" duration-ms="236" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TEST_CASE_ONE -->
-        <test-method signature="TEST_CASE_TWO()[pri:0, instance:TestCases.LoginTestCases@ae13544]" started-at="2022-07-26T12:23:39Z" name="TEST_CASE_TWO" finished-at="2022-07-26T12:23:41Z" duration-ms="1903" status="PASS">
+        </test-method> <!-- HomePage_Image -->
+        <test-method signature="FindAllVeterns()[pri:1, instance:TestCases.HomePage@43c1b556]" started-at="2022-07-28T01:18:58Z" name="FindAllVeterns" finished-at="2022-07-28T01:18:59Z" duration-ms="488" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TEST_CASE_TWO -->
-        <test-method is-config="true" signature="destroyDriver()[pri:0, instance:TestCases.LoginTestCases@ae13544]" started-at="2022-07-26T12:23:41Z" name="destroyDriver" finished-at="2022-07-26T12:23:42Z" duration-ms="289" status="PASS">
+        </test-method> <!-- FindAllVeterns -->
+        <test-method signature="AddNewOwnerPet()[pri:3, instance:TestCases.HomePage@43c1b556]" started-at="2022-07-28T01:18:59Z" name="AddNewOwnerPet" finished-at="2022-07-28T01:19:00Z" duration-ms="1491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddNewOwnerPet -->
+        <test-method signature="VerifyNewOwnerPetDetails()[pri:4, instance:TestCases.HomePage@43c1b556]" started-at="2022-07-28T01:19:00Z" name="VerifyNewOwnerPetDetails" finished-at="2022-07-28T01:19:01Z" duration-ms="462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyNewOwnerPetDetails -->
+        <test-method is-config="true" signature="destroyDriver()[pri:0, instance:TestCases.HomePage@43c1b556]" started-at="2022-07-28T01:19:01Z" name="destroyDriver" finished-at="2022-07-28T01:19:01Z" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroyDriver -->
-      </class> <!-- TestCases.LoginTestCases -->
-    </test> <!-- DeliveryOrderTest -->
+      </class> <!-- TestCases.HomePage -->
+    </test> <!-- petclinicSmoke -->
   </suite> <!-- Suite-1 -->
 </testng-results>

@@ -1,67 +1,61 @@
 package reportManager;
 
+import java.io.File;
+
 import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-public class ExtentManager {
-
-    private static ExtentReports extentReports = null;
-    private static ThreadLocal<ExtentReports> extent = new ThreadLocal();
-    private static ThreadLocal<ExtentTest> test = new ThreadLocal();
-    private static ThreadLocal<ExtentTest> child = new ThreadLocal();
-    private static ThreadLocal<ExtentTest> subchild = new ThreadLocal();
-
-    public ExtentManager() {
-    }
+public class ExtentManager {private static ExtentReports extent;
+private static String reportFileName = "Test-Automaton-Report"+".html";
+private static String fileSeperator = System.getProperty("file.separator");
+private static String reportFilepath = System.getProperty("user.dir") +fileSeperator+ "TestReport";
+private static String reportFileLocation =  reportFilepath +fileSeperator+ reportFileName;
 
 
-    public synchronized static ThreadLocal<ExtentTest> getTest() {
-        return test;
-    }
+public static ExtentReports getInstance() {
+    if (extent == null)
+        createInstance();
+    return extent;
+}
 
-    public synchronized static void setTest(ExtentTest test) {
-        getTest().set(test);
-    }
+//Create an extent report instance
+public static ExtentReports createInstance() {
+    String fileName = getReportPath(reportFilepath);
+   
+    ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(fileName);
+    //htmlReporter.config().setTestViewChartLocation(ChartLocation.BOTTOM);
+ //   htmlReporter.config().setChartVisibilityOnOpen(true);
+    htmlReporter.config().setTheme(Theme.STANDARD);
+    htmlReporter.config().setDocumentTitle(reportFileName);
+    htmlReporter.config().setEncoding("utf-8");
+    htmlReporter.config().setReportName(reportFileName);
+    htmlReporter.config().setTimeStampFormat("EEEE, MMMM dd, yyyy, hh:mm a '('zzz')'");
 
-    public synchronized static ThreadLocal<ExtentTest> getChild() {
-        return child;
-    }
+    extent = new ExtentReports();
+    extent.attachReporter(htmlReporter);
+    //Set environment details
+	extent.setSystemInfo("OS", "Windows");
+	extent.setSystemInfo("AUT", "QA");
 
-    public synchronized static void setChild(ExtentTest child) {
-        getChild().set(child);
-    }
-
-    public static ThreadLocal<ExtentReports> getExtent() {
-        return extent;
-    }
-
-    public static void setExtent(ExtentReports extent) {
-        getExtent().set(extent);
-    }
-
-    public static ExtentReports getInstance() {
-        return extentReports;
-    }
-
-    public static ExtentReports createInstance(String reportFolderPath, String reportName) {
-        if (extentReports == null) {
-            ExtentHtmlReporter htmlReporter = new ExtentHtmlReporter(reportFolderPath + reportName);
-            htmlReporter.config().setDocumentTitle("Automation Report");
-            htmlReporter.config().setReportName("Automation Reports ");
-            htmlReporter.config().setTheme(Theme.STANDARD);
-            htmlReporter.config().setEncoding("utf-8");
-            extentReports = new ExtentReports();
-            extentReports.attachReporter(htmlReporter);
-            setExtent(extentReports);
-            return getExtent().get();
+    return extent;
+}
+ 
+//Create the report path
+private static String getReportPath (String path) {
+	File testDirectory = new File(path);
+    if (!testDirectory.exists()) {
+    	if (testDirectory.mkdir()) {
+            System.out.println("Directory: " + path + " is created!" );
+            return reportFileLocation;
+        } else {
+            System.out.println("Failed to create directory: " + path);
+            return System.getProperty("user.dir");
         }
-        return extentReports;
+    } else {
+        System.out.println("Directory already exists: " + path);
     }
-
-    public static void addExecutionDetails_ExtentReport() {
-        getExtent().get().flush();
-    }
+	return reportFileLocation;
+}
 }
 
