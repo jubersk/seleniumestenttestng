@@ -33,7 +33,7 @@ public class HomePage extends BaseTest {
 
 	}
 	
-	@Test(priority=4,dependsOnGroups = { "AddNewOwnerPet" })
+	@Test(priority=4)
 	public void VerifyNewOwnerPetDetails() throws Exception {
 		homePage.searchOwnersMenu();
 		homePage.searchByLastName();

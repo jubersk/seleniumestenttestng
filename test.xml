@@ -7,8 +7,7 @@
     <test name="petclinicSmoke" thread-count="1">
         <classes>
             <class name="TestCases.HomePage"/>
-         
-           
+             
         </classes>
     </test>
 </suite>
