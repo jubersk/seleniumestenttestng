@@ -1,5 +1,7 @@
 package Pages;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,20 +9,28 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
+import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+import actionHelper.GenericMethods;
 import util.TestDataClass;
 
 
-public class HomePage extends BasePageClass {
+public class HomePage {
+	
+	protected WebDriver driver;
+    static GenericMethods webActionHelperMethods;
+    
+    public HomePage(WebDriver driver) {
+        this.driver = driver;
+        PageFactory.initElements(driver, this);
+        webActionHelperMethods= new GenericMethods(driver);
+    }
+
 	TestDataClass testData = new TestDataClass();
 	List<String> items1 = new ArrayList<>();
 	List<String> items2 = new ArrayList<>();
 	String generatedString = RandomStringUtils.randomAlphabetic(10);
 	String generateNumber = RandomStringUtils.randomNumeric(10);
-	
-	public HomePage(WebDriver driver) {
-		super(driver);
-	}
 
 	@FindBy(xpath = "//img[@class='img-responsive']")
 	WebElement imageHome;
@@ -144,16 +154,16 @@ public class HomePage extends BasePageClass {
 		
 		String petName = generatedString + "P";
 		webActionHelperMethods.ClearTextArea(inputPetName);
-		webActionHelperMethods.writeOnEditText("Test",inputPetName);
+		webActionHelperMethods.writeOnEditText(petName,inputPetName);
 		items2.add(petName);
 		
-		String birthDate = "12-11-2021";
+		String birthDate = webActionHelperMethods.getCurrentTimeStamp();
 		webActionHelperMethods.ClearTextArea(inputPetBD);
 		webActionHelperMethods.writeOnEditText(birthDate,inputPetBD);
 		items2.add(birthDate);
 		
-		webActionHelperMethods.selectdropdown(inputPetType,"cat");
-		items2.add("cat");
+		webActionHelperMethods.selectdropdown(inputPetType,"bird");
+		items2.add("bird");
 		
 		testData.setListPet(items2);
 		
@@ -172,15 +182,19 @@ public class HomePage extends BasePageClass {
 	}
 	
 	
-	public void checkDetailsAdded() {
-		webActionHelperMethods.verifyObjectText(testData.getListOwner().get(0), OwnerTableDetails.get(0));
-		webActionHelperMethods.verifyObjectText(testData.getListOwner().get(1), OwnerTableDetails.get(1));
-		webActionHelperMethods.verifyObjectText(testData.getListOwner().get(2), OwnerTableDetails.get(2));
-		webActionHelperMethods.verifyObjectText(testData.getListOwner().get(3), OwnerTableDetails.get(3));
-		
-		webActionHelperMethods.verifyObjectText(testData.getListOwner().get(0), PetTableDetails.get(0));
-		webActionHelperMethods.verifyObjectText(testData.getListOwner().get(1), PetTableDetails.get(1));
-		webActionHelperMethods.verifyObjectText(testData.getListOwner().get(2), PetTableDetails.get(2));
+	public void checkDetailsAdded() throws ParseException {
+		String FullName = testData.getListOwner().get(0) + " " + testData.getListOwner().get(1);
+		Assert.assertTrue(webActionHelperMethods.verifyObjectText(FullName, OwnerTableDetails.get(0)),"Verify Owner Name");
+		Assert.assertTrue(webActionHelperMethods.verifyObjectText(testData.getListOwner().get(2), OwnerTableDetails.get(1)),"Verify Owner Address");
+		Assert.assertTrue(webActionHelperMethods.verifyObjectText(testData.getListOwner().get(3), OwnerTableDetails.get(2)),"Verify Owner City");
+		Assert.assertTrue(webActionHelperMethods.verifyObjectText(testData.getListOwner().get(4), OwnerTableDetails.get(3)),"Verify Owner Telephone");
+		Assert.assertTrue(webActionHelperMethods.verifyObjectText(testData.getListPet().get(0), PetTableDetails.get(0)),"Verify Pet Name");
+		String ActualDate = PetTableDetails.get(1).getText();
+		SimpleDateFormat date1 = new SimpleDateFormat("dd-MM-yyyy");
+	    SimpleDateFormat date2 = new SimpleDateFormat("yyyy-MM-dd");
+	    System.out.println(date1.format(date2.parse(ActualDate)));
+		Assert.assertEquals(testData.getListPet().get(1), date1.format(date2.parse(ActualDate)),"Verify Pet DOB");
+		Assert.assertTrue(webActionHelperMethods.verifyObjectText(testData.getListPet().get(2), PetTableDetails.get(2)),"Verify Pet Type");
 		
 	}
 	
@@ -205,11 +219,11 @@ public class HomePage extends BasePageClass {
 		webActionHelperMethods.clickbutton(OwnerMenu);
 		webActionHelperMethods.clickbutton(buttonAddOwner);
 	}
-	public void getAllOwners() {
-		webActionHelperMethods.getTableData(OwnerTable,OwnerTableHeader,OwnerTableRow,buttonNext, "Owner List::");
+	public String getAllOwners() {
+		return webActionHelperMethods.getTableData(OwnerTable,OwnerTableHeader,OwnerTableRow,buttonNext, "Owner List::");
 	}
-	public void getAllVeterns() {
-		webActionHelperMethods.getTableData(VetTable,VetsTableHeader,VetsTableRow,buttonNext, "Vets List::");
+	public String getAllVeterns() {
+		return webActionHelperMethods.getTableData(VetTable,VetsTableHeader,VetsTableRow,buttonNext, "Vets List::");
 	}
 
 }

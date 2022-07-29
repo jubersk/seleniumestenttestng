@@ -1,37 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="5" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
+    <line>
+      <![CDATA[[{Name=Helen Leary, Specialties=radiology}, {Name=Linda Douglas, Specialties=dentistry surgery}, {Name=Rafael Ortega, Specialties=surgery}, {Name=Henry Stevens, Specialties=radiology}]]]>
+    </line>
+    <line>
+      <![CDATA[[{Name=Betty Davis, Address=638 Cardinal Ave., City=Sun Prairie, Telephone=6085551749, Pets=Basil}, {Name=Eduardo Rodriquez, Address=2693 Commerce St., City=McFarland, Telephone=6085558763, Pets=Jewel, Rosy}, {Name=Harold Davis, Address=563 Friendly St., City=Windsor, Telephone=6085553198, Pets=Iggy}, {Name=Peter McTavish, Address=2387 S. Fair Way, City=Madison, Telephone=6085552765, Pets=George}, {Name=Jeff Black, Address=1450 Oak Blvd., City=Monona, Telephone=6085555387, Pets=Lucky}, {Name=Maria Escobito, Address=345 Maple St., City=Madison, Telephone=6085557683, Pets=Mulligan}, {Name=David Schroeder, Address=2749 Blackhawk Trail, City=Madison, Telephone=6085559435, Pets=Freddy}, {Name=Carlos Estaban, Address=2335 Independence La., City=Waunakee, Telephone=6085555487, Pets=Lucky, Sly}, {Name=ncwECitReyFN ncwECitReyLN, Address=ncwECitReyAdd, City=ncwECitReyCity, Telephone=0982147051, Pets=Test}, {Name=JMVsXOmILmFN JMVsXOmILmLN, Address=JMVsXOmILmAdd, City=JMVsXOmILmCity, Telephone=0498513048, Pets=Test}, {Name=EacjHiaHwLFN EacjHiaHwLLN, Address=EacjHiaHwLAdd, City=EacjHiaHwLCity, Telephone=9668732474, Pets=Test}, {Name=YAFVdZmXPNFN YAFVdZmXPNLN, Address=YAFVdZmXPNAdd, City=YAFVdZmXPNCity, Telephone=7812093376, Pets=Test}, {Name=pCrbWblFznFN pCrbWblFznLN, Address=pCrbWblFznAdd, City=pCrbWblFznCity, Telephone=3298362019, Pets=Test}, {Name=mvvtrpdzggFN mvvtrpdzggLN, Address=mvvtrpdzggAdd, City=mvvtrpdzggCity, Telephone=1655155739, Pets=Test}, {Name=gOYOZfRSAJFN gOYOZfRSAJLN, Address=gOYOZfRSAJAdd, City=gOYOZfRSAJCity, Telephone=4262899810, Pets=Test}, {Name=WVtgWBpeKzFN WVtgWBpeKzLN, Address=WVtgWBpeKzAdd, City=WVtgWBpeKzCity, Telephone=7534763124, Pets=Test}, {Name=DuGYmnpRuGFN DuGYmnpRuGLN, Address=DuGYmnpRuGAdd, City=DuGYmnpRuGCity, Telephone=7391362083, Pets=Test}, {Name=ntiRGyorQwFN ntiRGyorQwLN, Address=ntiRGyorQwAdd, City=ntiRGyorQwCity, Telephone=7924506246, Pets=Test}, {Name=yJXcXukRTkFN yJXcXukRTkLN, Address=yJXcXukRTkAdd, City=yJXcXukRTkCity, Telephone=5537333557, Pets=Test}, {Name=CpvCCVqkZKFN CpvCCVqkZKLN, Address=CpvCCVqkZKAdd, City=CpvCCVqkZKCity, Telephone=9537128874, Pets=Test}, {Name=SUPkktyHwPFN SUPkktyHwPLN, Address=SUPkktyHwPAdd, City=SUPkktyHwPCity, Telephone=3838867183, Pets=Test}, {Name=XzeakOtjVJFN XzeakOtjVJLN, Address=XzeakOtjVJAdd, City=XzeakOtjVJCity, Telephone=2227602098, Pets=Test}, {Name=EKZcHfTACkFN EKZcHfTACkLN, Address=EKZcHfTACkAdd, City=EKZcHfTACkCity, Telephone=3889341169, Pets=Test}, {Name=ZMCigeopgmFN ZMCigeopgmLN, Address=ZMCigeopgmAdd, City=ZMCigeopgmCity, Telephone=9545008868, Pets=Test}, {Name=gyKzANSZzUFN gyKzANSZzULN, Address=gyKzANSZzUAdd, City=gyKzANSZzUCity, Telephone=5784474905, Pets=gyKzANSZzUP}, {Name=npUjrMyfpwFN npUjrMyfpwLN, Address=npUjrMyfpwAdd, City=npUjrMyfpwCity, Telephone=3276802611, Pets=npUjrMyfpwP}, {Name=YHtKqgsjBbFN YHtKqgsjBbLN, Address=YHtKqgsjBbAdd, City=YHtKqgsjBbCity, Telephone=7600408322, Pets=YHtKqgsjBbP}, {Name=hZJHDxwdouFN hZJHDxwdouLN, Address=hZJHDxwdouAdd, City=hZJHDxwdouCity, Telephone=7551212133, Pets=hZJHDxwdouP}, {Name=XnMcQiNiXmFN XnMcQiNiXmLN, Address=XnMcQiNiXmAdd, City=XnMcQiNiXmCity, Telephone=6261820235, Pets=}]]]>
+    </line>
   </reporter-output>
-  <suite started-at="2022-07-27T19:48:58Z" name="Suite-1" finished-at="2022-07-27T19:49:01Z" duration-ms="2700">
+  <suite started-at="2022-07-28T13:56:09Z" name="Default suite" finished-at="2022-07-28T13:56:31Z" duration-ms="21928">
     <groups>
     </groups>
-    <test started-at="2022-07-27T19:48:58Z" name="petclinicSmoke" finished-at="2022-07-27T19:49:01Z" duration-ms="2700">
+    <test started-at="2022-07-28T13:56:09Z" name="Default test" finished-at="2022-07-28T13:56:31Z" duration-ms="21928">
       <class name="TestCases.HomePage">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.HomePage@43c1b556]" started-at="2022-07-28T01:18:56Z" name="setUp" finished-at="2022-07-28T01:18:58Z" duration-ms="2121" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:TestCases.HomePage@2d778add]" started-at="2022-07-28T13:56:07Z" name="setUp" finished-at="2022-07-28T13:56:09Z" duration-ms="1956" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="HomePage_Image()[pri:0, instance:TestCases.HomePage@43c1b556]" started-at="2022-07-28T01:18:58Z" name="HomePage_Image" finished-at="2022-07-28T01:18:58Z" duration-ms="236" status="PASS">
+        <test-method signature="VerifyHomePageImage()[pri:0, instance:TestCases.HomePage@2d778add]" started-at="2022-07-28T13:56:09Z" name="VerifyHomePageImage" finished-at="2022-07-28T13:56:09Z" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- HomePage_Image -->
-        <test-method signature="FindAllVeterns()[pri:1, instance:TestCases.HomePage@43c1b556]" started-at="2022-07-28T01:18:58Z" name="FindAllVeterns" finished-at="2022-07-28T01:18:59Z" duration-ms="488" status="PASS">
+        </test-method> <!-- VerifyHomePageImage -->
+        <test-method signature="FindAllVeterns()[pri:1, instance:TestCases.HomePage@2d778add]" started-at="2022-07-28T13:56:09Z" name="FindAllVeterns" finished-at="2022-07-28T13:56:10Z" duration-ms="553" status="PASS">
           <reporter-output>
+            <line>
+              <![CDATA[[{Name=Helen Leary, Specialties=radiology}, {Name=Linda Douglas, Specialties=dentistry surgery}, {Name=Rafael Ortega, Specialties=surgery}, {Name=Henry Stevens, Specialties=radiology}]]]>
+            </line>
           </reporter-output>
         </test-method> <!-- FindAllVeterns -->
-        <test-method signature="AddNewOwnerPet()[pri:3, instance:TestCases.HomePage@43c1b556]" started-at="2022-07-28T01:18:59Z" name="AddNewOwnerPet" finished-at="2022-07-28T01:19:00Z" duration-ms="1491" status="PASS">
+        <test-method signature="FindAllOwners()[pri:2, instance:TestCases.HomePage@2d778add]" started-at="2022-07-28T13:56:10Z" name="FindAllOwners" finished-at="2022-07-28T13:56:13Z" duration-ms="3924" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[[{Name=Betty Davis, Address=638 Cardinal Ave., City=Sun Prairie, Telephone=6085551749, Pets=Basil}, {Name=Eduardo Rodriquez, Address=2693 Commerce St., City=McFarland, Telephone=6085558763, Pets=Jewel, Rosy}, {Name=Harold Davis, Address=563 Friendly St., City=Windsor, Telephone=6085553198, Pets=Iggy}, {Name=Peter McTavish, Address=2387 S. Fair Way, City=Madison, Telephone=6085552765, Pets=George}, {Name=Jeff Black, Address=1450 Oak Blvd., City=Monona, Telephone=6085555387, Pets=Lucky}, {Name=Maria Escobito, Address=345 Maple St., City=Madison, Telephone=6085557683, Pets=Mulligan}, {Name=David Schroeder, Address=2749 Blackhawk Trail, City=Madison, Telephone=6085559435, Pets=Freddy}, {Name=Carlos Estaban, Address=2335 Independence La., City=Waunakee, Telephone=6085555487, Pets=Lucky, Sly}, {Name=ncwECitReyFN ncwECitReyLN, Address=ncwECitReyAdd, City=ncwECitReyCity, Telephone=0982147051, Pets=Test}, {Name=JMVsXOmILmFN JMVsXOmILmLN, Address=JMVsXOmILmAdd, City=JMVsXOmILmCity, Telephone=0498513048, Pets=Test}, {Name=EacjHiaHwLFN EacjHiaHwLLN, Address=EacjHiaHwLAdd, City=EacjHiaHwLCity, Telephone=9668732474, Pets=Test}, {Name=YAFVdZmXPNFN YAFVdZmXPNLN, Address=YAFVdZmXPNAdd, City=YAFVdZmXPNCity, Telephone=7812093376, Pets=Test}, {Name=pCrbWblFznFN pCrbWblFznLN, Address=pCrbWblFznAdd, City=pCrbWblFznCity, Telephone=3298362019, Pets=Test}, {Name=mvvtrpdzggFN mvvtrpdzggLN, Address=mvvtrpdzggAdd, City=mvvtrpdzggCity, Telephone=1655155739, Pets=Test}, {Name=gOYOZfRSAJFN gOYOZfRSAJLN, Address=gOYOZfRSAJAdd, City=gOYOZfRSAJCity, Telephone=4262899810, Pets=Test}, {Name=WVtgWBpeKzFN WVtgWBpeKzLN, Address=WVtgWBpeKzAdd, City=WVtgWBpeKzCity, Telephone=7534763124, Pets=Test}, {Name=DuGYmnpRuGFN DuGYmnpRuGLN, Address=DuGYmnpRuGAdd, City=DuGYmnpRuGCity, Telephone=7391362083, Pets=Test}, {Name=ntiRGyorQwFN ntiRGyorQwLN, Address=ntiRGyorQwAdd, City=ntiRGyorQwCity, Telephone=7924506246, Pets=Test}, {Name=yJXcXukRTkFN yJXcXukRTkLN, Address=yJXcXukRTkAdd, City=yJXcXukRTkCity, Telephone=5537333557, Pets=Test}, {Name=CpvCCVqkZKFN CpvCCVqkZKLN, Address=CpvCCVqkZKAdd, City=CpvCCVqkZKCity, Telephone=9537128874, Pets=Test}, {Name=SUPkktyHwPFN SUPkktyHwPLN, Address=SUPkktyHwPAdd, City=SUPkktyHwPCity, Telephone=3838867183, Pets=Test}, {Name=XzeakOtjVJFN XzeakOtjVJLN, Address=XzeakOtjVJAdd, City=XzeakOtjVJCity, Telephone=2227602098, Pets=Test}, {Name=EKZcHfTACkFN EKZcHfTACkLN, Address=EKZcHfTACkAdd, City=EKZcHfTACkCity, Telephone=3889341169, Pets=Test}, {Name=ZMCigeopgmFN ZMCigeopgmLN, Address=ZMCigeopgmAdd, City=ZMCigeopgmCity, Telephone=9545008868, Pets=Test}, {Name=gyKzANSZzUFN gyKzANSZzULN, Address=gyKzANSZzUAdd, City=gyKzANSZzUCity, Telephone=5784474905, Pets=gyKzANSZzUP}, {Name=npUjrMyfpwFN npUjrMyfpwLN, Address=npUjrMyfpwAdd, City=npUjrMyfpwCity, Telephone=3276802611, Pets=npUjrMyfpwP}, {Name=YHtKqgsjBbFN YHtKqgsjBbLN, Address=YHtKqgsjBbAdd, City=YHtKqgsjBbCity, Telephone=7600408322, Pets=YHtKqgsjBbP}, {Name=hZJHDxwdouFN hZJHDxwdouLN, Address=hZJHDxwdouAdd, City=hZJHDxwdouCity, Telephone=7551212133, Pets=hZJHDxwdouP}, {Name=XnMcQiNiXmFN XnMcQiNiXmLN, Address=XnMcQiNiXmAdd, City=XnMcQiNiXmCity, Telephone=6261820235, Pets=}]]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- FindAllOwners -->
+        <test-method signature="AddNewOwnerPet()[pri:3, instance:TestCases.HomePage@2d778add]" started-at="2022-07-28T13:56:13Z" name="AddNewOwnerPet" finished-at="2022-07-28T13:56:28Z" duration-ms="14492" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddNewOwnerPet -->
-        <test-method signature="VerifyNewOwnerPetDetails()[pri:4, instance:TestCases.HomePage@43c1b556]" started-at="2022-07-28T01:19:00Z" name="VerifyNewOwnerPetDetails" finished-at="2022-07-28T01:19:01Z" duration-ms="462" status="PASS">
+        <test-method signature="VerifyNewOwnerPetDetails()[pri:4, instance:TestCases.HomePage@2d778add]" started-at="2022-07-28T13:56:28Z" name="VerifyNewOwnerPetDetails" finished-at="2022-07-28T13:56:31Z" duration-ms="2852" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyNewOwnerPetDetails -->
-        <test-method is-config="true" signature="destroyDriver()[pri:0, instance:TestCases.HomePage@43c1b556]" started-at="2022-07-28T01:19:01Z" name="destroyDriver" finished-at="2022-07-28T01:19:01Z" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="destroyDriver()[pri:0, instance:TestCases.HomePage@2d778add]" started-at="2022-07-28T13:56:31Z" name="destroyDriver" finished-at="2022-07-28T13:56:31Z" duration-ms="251" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- destroyDriver -->
       </class> <!-- TestCases.HomePage -->
-    </test> <!-- petclinicSmoke -->
-  </suite> <!-- Suite-1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>petclinicSmoke</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 28 01:18:58 IST 2022</td>
+<td>Started on:</td><td>Thu Jul 28 18:55:06 IST 2022</td>
 </tr>
-<tr><td>Total time:</td><td>2 seconds (2700 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6250 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,54 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCases.HomePage.VerifyNewOwnerPetDetails()'><b>VerifyNewOwnerPetDetails</b><br>Test class: TestCases.HomePage</td>
+<td><div><pre>java.lang.AssertionError: Verify Pet DOB expected [true] but found [false]
+	at Pages.HomePage.checkDetailsAdded(HomePage.java:192)
+	at TestCases.HomePage.VerifyNewOwnerPetDetails(HomePage.java:44)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1892470159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1892470159'><pre>java.lang.AssertionError: Verify Pet DOB expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertTrue(Assert.java:44)
+	at Pages.HomePage.checkDetailsAdded(HomePage.java:192)
+	at TestCases.HomePage.VerifyNewOwnerPetDetails(HomePage.java:44)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:648)
+	at org.testng.TestRunner.run(TestRunner.java:505)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+	at org.testng.TestNG.runSuites(TestNG.java:1049)
+	at org.testng.TestNG.run(TestNG.java:1017)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>TestCases.HomePage@313b2ea6</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -78,22 +126,36 @@ function toggleAllBoxes() {
 <td title='TestCases.HomePage.AddNewOwnerPet()'><b>AddNewOwnerPet</b><br>Test class: TestCases.HomePage</td>
 <td></td>
 <td>1</td>
-<td>TestCases.HomePage@43c1b556</td></tr>
+<td>TestCases.HomePage@313b2ea6</td></tr>
 <tr>
-<td title='TestCases.HomePage.FindAllVeterns()'><b>FindAllVeterns</b><br>Test class: TestCases.HomePage</td>
+<td title='TestCases.HomePage.FindAllOwners()'><b>FindAllOwners</b><br>Test class: TestCases.HomePage<br/>
+<a href="#Output-926905424" onClick='toggleBox("Output-926905424", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-926905424" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-926905424">
+[{Name=Betty Davis, Address=638 Cardinal Ave., City=Sun Prairie, Telephone=6085551749, Pets=Basil}, {Name=Eduardo Rodriquez, Address=2693 Commerce St., City=McFarland, Telephone=6085558763, Pets=Jewel, Rosy}, {Name=Harold Davis, Address=563 Friendly St., City=Windsor, Telephone=6085553198, Pets=Iggy}, {Name=Peter McTavish, Address=2387 S. Fair Way, City=Madison, Telephone=6085552765, Pets=George}, {Name=Jeff Black, Address=1450 Oak Blvd., City=Monona, Telephone=6085555387, Pets=Lucky}, {Name=Maria Escobito, Address=345 Maple St., City=Madison, Telephone=6085557683, Pets=Mulligan}, {Name=David Schroeder, Address=2749 Blackhawk Trail, City=Madison, Telephone=6085559435, Pets=Freddy}, {Name=Carlos Estaban, Address=2335 Independence La., City=Waunakee, Telephone=6085555487, Pets=Lucky, Sly}, {Name=ncwECitReyFN ncwECitReyLN, Address=ncwECitReyAdd, City=ncwECitReyCity, Telephone=0982147051, Pets=Test}, {Name=JMVsXOmILmFN JMVsXOmILmLN, Address=JMVsXOmILmAdd, City=JMVsXOmILmCity, Telephone=0498513048, Pets=Test}, {Name=EacjHiaHwLFN EacjHiaHwLLN, Address=EacjHiaHwLAdd, City=EacjHiaHwLCity, Telephone=9668732474, Pets=Test}, {Name=YAFVdZmXPNFN YAFVdZmXPNLN, Address=YAFVdZmXPNAdd, City=YAFVdZmXPNCity, Telephone=7812093376, Pets=Test}, {Name=pCrbWblFznFN pCrbWblFznLN, Address=pCrbWblFznAdd, City=pCrbWblFznCity, Telephone=3298362019, Pets=Test}, {Name=mvvtrpdzggFN mvvtrpdzggLN, Address=mvvtrpdzggAdd, City=mvvtrpdzggCity, Telephone=1655155739, Pets=Test}, {Name=gOYOZfRSAJFN gOYOZfRSAJLN, Address=gOYOZfRSAJAdd, City=gOYOZfRSAJCity, Telephone=4262899810, Pets=Test}, {Name=WVtgWBpeKzFN WVtgWBpeKzLN, Address=WVtgWBpeKzAdd, City=WVtgWBpeKzCity, Telephone=7534763124, Pets=Test}, {Name=DuGYmnpRuGFN DuGYmnpRuGLN, Address=DuGYmnpRuGAdd, City=DuGYmnpRuGCity, Telephone=7391362083, Pets=Test}, {Name=ntiRGyorQwFN ntiRGyorQwLN, Address=ntiRGyorQwAdd, City=ntiRGyorQwCity, Telephone=7924506246, Pets=Test}, {Name=yJXcXukRTkFN yJXcXukRTkLN, Address=yJXcXukRTkAdd, City=yJXcXukRTkCity, Telephone=5537333557, Pets=Test}, {Name=CpvCCVqkZKFN CpvCCVqkZKLN, Address=CpvCCVqkZKAdd, City=CpvCCVqkZKCity, Telephone=9537128874, Pets=Test}, {Name=SUPkktyHwPFN SUPkktyHwPLN, Address=SUPkktyHwPAdd, City=SUPkktyHwPCity, Telephone=3838867183, Pets=Test}, {Name=XzeakOtjVJFN XzeakOtjVJLN, Address=XzeakOtjVJAdd, City=XzeakOtjVJCity, Telephone=2227602098, Pets=Test}, {Name=EKZcHfTACkFN EKZcHfTACkLN, Address=EKZcHfTACkAdd, City=EKZcHfTACkCity, Telephone=3889341169, Pets=Test}, {Name=ZMCigeopgmFN ZMCigeopgmLN, Address=ZMCigeopgmAdd, City=ZMCigeopgmCity, Telephone=9545008868, Pets=Test}, {Name=gyKzANSZzUFN gyKzANSZzULN, Address=gyKzANSZzUAdd, City=gyKzANSZzUCity, Telephone=5784474905, Pets=gyKzANSZzUP}]<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>TestCases.HomePage@313b2ea6</td></tr>
+<tr>
+<td title='TestCases.HomePage.FindAllVeterns()'><b>FindAllVeterns</b><br>Test class: TestCases.HomePage<br/>
+<a href="#Output-70978270" onClick='toggleBox("Output-70978270", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-70978270" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-70978270">
+[{Name=Helen Leary, Specialties=radiology}, {Name=Linda Douglas, Specialties=dentistry surgery}, {Name=Rafael Ortega, Specialties=surgery}, {Name=Henry Stevens, Specialties=radiology}]<br/>
+</div>
+</td>
 <td></td>
 <td>0</td>
-<td>TestCases.HomePage@43c1b556</td></tr>
+<td>TestCases.HomePage@313b2ea6</td></tr>
 <tr>
-<td title='TestCases.HomePage.HomePage_Image()'><b>HomePage_Image</b><br>Test class: TestCases.HomePage</td>
+<td title='TestCases.HomePage.VerifyHomePageImage()'><b>VerifyHomePageImage</b><br>Test class: TestCases.HomePage</td>
 <td></td>
 <td>0</td>
-<td>TestCases.HomePage@43c1b556</td></tr>
-<tr>
-<td title='TestCases.HomePage.VerifyNewOwnerPetDetails()'><b>VerifyNewOwnerPetDetails</b><br>Test class: TestCases.HomePage</td>
-<td></td>
-<td>0</td>
-<td>TestCases.HomePage@43c1b556</td></tr>
+<td>TestCases.HomePage@313b2ea6</td></tr>
 </table><p>
 </body>
 </html>

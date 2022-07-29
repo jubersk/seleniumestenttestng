@@ -1,2 +1,5 @@
--- run the below command 
-	mvn test run
+-- Will run on chrome browser
+-- Navigate to the project folder
+-- Opend command prompt CD ProjectFolderLocation
+-- Then run command as "mvn clean test run"
+-- check the TestNG report "emailable-report.html" under test-output Folder

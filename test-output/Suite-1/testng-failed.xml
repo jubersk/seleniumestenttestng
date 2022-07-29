@@ -4,13 +4,12 @@
   <listeners>
     <listener class-name="listeners.TestListner"/>
   </listeners>
-  <test name="petclinicSmoke(failed)">
+  <test thread-count="5" name="petclinicSmoke(failed)">
     <classes>
       <class name="TestCases.HomePage">
         <methods>
           <include name="destroyDriver"/>
-          <include name="FindAllOwners"/>
-          <include name="FindAllVeterns"/>
+          <include name="VerifyNewOwnerPetDetails"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- TestCases.HomePage -->

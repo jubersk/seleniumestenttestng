@@ -1,11 +1,13 @@
 package TestCases;
 
 import org.testng.Assert;
+import org.testng.Reporter;
 import org.testng.annotations.Test;
+
 
 public class HomePage extends BaseTest {
 	@Test(priority = 0)
-	public void HomePage_Image() throws Exception {
+	public void VerifyHomePageImage() throws Exception {
 		Assert.assertTrue(homePage.checkHomePageImage(), "Verify Image on HomePage");
 
 	}
@@ -13,7 +15,8 @@ public class HomePage extends BaseTest {
 	@Test(priority = 1) 
 	public void FindAllVeterns() throws Exception {
 		homePage.clickVetsMenu(); 
-		homePage.getAllVeterns();
+		Reporter.log(homePage.getAllVeterns());
+		
 
 	}
 
@@ -21,7 +24,8 @@ public class HomePage extends BaseTest {
 	public void FindAllOwners() throws Exception {
 		homePage.searchOwnersMenu();
 		homePage.clickSubmit();
-		homePage.getAllOwners();
+		Reporter.log(homePage.getAllOwners());
+		
 
 	}
 

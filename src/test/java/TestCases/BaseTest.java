@@ -7,6 +7,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
+import org.testng.asserts.SoftAssert;
+
 import util.utility;
 
 import java.util.Properties;
@@ -18,7 +20,7 @@ public class BaseTest {
     WebDriver driver;
     Properties properties;
     static String URL;
-
+ 
     @BeforeSuite
     public void setUp() {
         String propertyPath = System.getProperty("user.dir") + "//src//test//resources//Env.properties";
